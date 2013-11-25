@@ -3,6 +3,12 @@
  */
 (function($){
 
-	console.log($('script', document.body));
+	console.log($('script') instanceof Object);
+	$.fn.asaa = function(){
+		console.log(this);
+		return this;
+	};
+	$('script').asaa().append().asaa();
+
 
 })(jQuery)
