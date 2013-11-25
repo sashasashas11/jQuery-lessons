@@ -1,12 +1,8 @@
 /**
  * Created by sasha on 25.11.13.
  */
-(function($){
+jQuery(function($){
 
-	$('<input type="password">')
-		.prop({
-		value: ''
-	})
-			.appendTo('body')
+	console.log($('input'));
 
-})(jQuery)
+})
